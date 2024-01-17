@@ -1,0 +1,110 @@
+
+
+/* <style>
+tag.classe tag tag
+</style> */
+
+/* rem = si basa sulla grandezza del body e raddoppia la sua grandezza per ogni 1 rem che abbiamo (16 px saranno un rem, 2 rem saranno 32px)
+   em = si basa sulla larghezza del genitore più prossimo che la specifica, 
+        e raddoppiala la sua grandeza per ogni 1 em che abbiamo (20px saranno 1 em, e 2 em saranno 40px e via dicendo)*/
+/* vh (dvh device view port - ovvero prendere tutto il il vieuport al netto di quello che c'è sopra - come ad esempio tasterie o barra delle informazioni) */
+/* vw */
+
+/* text-align:center - funziona su testi e immagini
+per spostare blocchi (tipo div) bisogna dare una width e poi un margin-inline: auto,
+per immagini: no div, però aggiungiamo un id e aggiungiamo un display block
+*/
+
+/*per far spostare i pallini delle liste insieme agli elementi, basta dare una larghezza all "blocco" e un margine
+widht: tot; e margin-inline: block       107777;*/
+
+body{
+    margin: 0;
+}
+ h1, h2, h3, h4, h5, h6, p{
+    margin-block-start: 0;
+ }
+
+ main, footer{
+    width: 40%;
+    margin-inline: auto;
+    font-family:  'Times New Roman', Times, serif;
+    color: rgb(54,54,54);
+ }
+
+ .imag{
+   width: 12%;
+   display: block;
+   margin-inline: auto;
+   padding-block: 1rem;
+ }
+ 
+ .center{
+   text-align: center;
+ }
+.box_color{
+   height: 1rem;
+   background-color: rgb(253,251,241);
+   border-top: 2px solid rgb(255,216,119);
+   padding: 1rem;
+   font-weight: bolder;
+   color: rgb(16,119,119);
+   margin-block-end: 1rem;
+
+}
+
+ h2{
+   border-bottom: 1px solid rgb(196,243,242);
+   padding-bottom: 1rem;
+   font-weight: bold;
+ }
+
+h3{
+   font-size: 16px;
+   font-weight: bolder;
+}
+
+ a{
+   color: rgb(16,119,119);
+ }
+
+.space{
+   margin-block-start: 3rem;
+}
+.decoration_left{
+   border-left: 1px solid rgb(255,216,119);
+   padding-inline-start: 1rem;
+   
+
+}
+div.decoration_left p{
+   margin-block-end: 0;
+   font-size: 16px;
+   color: rgb(181,70,15);
+}
+
+.container_video{
+   border-radius: 1.25rem;
+   width: 100%;
+   overflow: hidden;
+}
+.video{
+   width: 100%;
+   display: block;
+   margin-inline: auto;   
+}
+
+.credits{
+   color: rgb(164, 163, 163);
+   margin-block: 1rem;
+}
+
+li{
+   margin-block-end: 0.75rem;
+}
+ 
+.alcove{
+  list-style-type: none;
+  margin-block-end: 1.5rem;
+}
+ 
